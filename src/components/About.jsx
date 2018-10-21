@@ -24,45 +24,71 @@ const About = () => {
         </div>
         <div className="col-sm-4">
           <h3 className="mb-4">My Skills</h3>
-          <div className="progress mb-3">
+
+          <div className="form-inline">
+            <p>Javascript</p>
+            <p className="ml-auto">25%</p>
+          </div>
+
+          <div className="progress progressheight mb-2">
             <div
-              className="progress-bar progressbar"
+              className="progress-bar progressbar bg-dark"
               role="progressbar"
               aria-valuenow="0"
               aria-valuemin="0"
               aria-valuemax="100"
             />
           </div>
-          <div className="progress mb-3">
+          <div className="form-inline">
+            <p>Javascript</p>
+            <p className="ml-auto">25%</p>
+          </div>
+
+          <div className="progress progressheight mb-2">
             <div
-              classNameName="progress-bar progressbar"
+              className="progress-bar progressbar bg-dark"
               role="progressbar"
               aria-valuenow="25"
               aria-valuemin="0"
               aria-valuemax="100"
             />
           </div>
-          <div className="progress mb-3">
+          <div className="form-inline">
+            <p>Javascript</p>
+            <p className="ml-auto">25%</p>
+          </div>
+
+          <div className="progress progressheight mb-2">
             <div
-              className="progress-bar progressbar"
+              className="progress-bar progressbar bg-dark"
               role="progressbar"
               aria-valuenow="50"
               aria-valuemin="0"
               aria-valuemax="100"
             />
           </div>
-          <div className="progress mb-3">
+          <div className="form-inline">
+            <p>Javascript</p>
+            <p className="ml-auto">25%</p>
+          </div>
+
+          <div className="progress progressheight mb-2">
             <div
-              className="progress-bar progressbar"
+              className="progress-bar bg-dark"
               role="progressbar"
               aria-valuenow="75"
               aria-valuemin="0"
               aria-valuemax="100"
             />
           </div>
-          <div className="progress mb-3">
+          <div className="form-inline">
+            <p>Javascript</p>
+            <p className="ml-auto">25%</p>
+          </div>
+
+          <div className="progress progressheight mb-2">
             <div
-              className="progress-bar progressbar "
+              className="progress-bar bg-dark"
               role="progressbar"
               aria-valuenow="100"
               aria-valuemin="0"
