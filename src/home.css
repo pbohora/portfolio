@@ -1,0 +1,10 @@
+h1 {
+  padding-top: 40%;
+  padding-bottom: 40%;
+}
+.bg {
+  background: url(myhome.jpeg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
