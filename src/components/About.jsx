@@ -1,12 +1,12 @@
 import React from "react";
 import "../about.css";
-import Profile from "../12.jpg";
+import Profile from "../profile.jpg";
 
 const About = () => {
   return (
-    <div className="container">
-      <div className="row styles">
-        <div className="col-sm-4 text-right">
+    <div className="container contianer-fluid aboutbody">
+      <div className="row">
+        <div className="col-lg-4 aboutme">
           <h2 className="text-weight-bold">Pradip Bohora</h2>
           <p>
             <strong>Full Stack Developer</strong>
@@ -16,13 +16,13 @@ const About = () => {
             years. I have experience working with local clients along with
             clients from all around the world. I have vast knowledge in html,
             css, Javascript , JQuery, Angular (javascript framewok), wordpress
-            theme development and so on.
+            theme development and so on .
           </p>
         </div>
-        <div className="col-sm-4">
+        <div className="col-lg-4">
           <img src={Profile} alt="" className="profileImg" />
         </div>
-        <div className="col-sm-4">
+        <div className="col-lg-4">
           <h3 className="mb-4">My Skills</h3>
 
           <div className="form-inline">

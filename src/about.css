@@ -1,5 +1,8 @@
 .styles {
-  padding: 5%;
+}
+.aboutbody {
+  padding-top: 8%;
+  height: 700px;
 }
 
 .profileImg {
@@ -12,4 +15,12 @@
 }
 .progressheight {
   height: 3%;
+}
+.aboutme {
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .aboutme {
+    text-align: center;
+  }
 }

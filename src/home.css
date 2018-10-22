@@ -1,19 +1,13 @@
-html,
-body {
-  height: 100%;
-}
 h1 {
   padding-top: 40vh;
   padding-bottom: 40vh;
 }
-@media only screen and (min-device-width: 400px) {
-  .bg {
-    background: url(myhome.jpeg);
-    height: 100vh;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
+.bg {
+  background: url(myhome.jpeg);
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
