@@ -4,3 +4,11 @@
 .navtext {
   font-size: 23px;
 }
+@media only screen and (max-width: 980px) {
+  .navtext {
+    background: lightgray;
+    height: 250px;
+
+    color: white;
+  }
+}

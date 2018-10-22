@@ -1,8 +1,11 @@
-.styles {
-}
 .aboutbody {
   padding-top: 8%;
   height: 700px;
+}
+
+.fontstyle {
+  font-family: "Poppins", sans-serif;
+  font-size: 75%;
 }
 
 .profileImg {
@@ -10,16 +13,13 @@
   width: 100%;
 }
 
-.progressbar {
-  width: 20%;
-}
 .progressheight {
   height: 3%;
 }
 .aboutme {
   text-align: right;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   .aboutme {
     text-align: center;
   }
