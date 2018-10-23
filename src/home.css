@@ -1,10 +1,11 @@
-h1 {
+.home-body {
   padding-top: 40vh;
   padding-bottom: 40vh;
+  color: azure;
 }
 
 .bg {
-  background: url(myhome.jpeg);
+  background: url(homess.jpg);
   height: 100vh;
 
   background-repeat: no-repeat;

@@ -4,13 +4,17 @@ import "../navbar.css";
 class Navbar extends Component {
   state = {
     color: "transparent",
-    textcolor: "white"
+    textcolor: "azure"
   };
 
   listenScrollEvent = e => {
     window.scrollY > 250
-      ? this.setState({ color: "white", textcolor: "red" })
-      : this.setState({ color: "transparent", textcolor: "white" });
+      ? this.setState({ color: "azure", textcolor: "red" })
+      : this.setState({
+          color: "transparent",
+          textcolor: "azure",
+          opacity: 1
+        });
   };
 
   componentDidMount() {

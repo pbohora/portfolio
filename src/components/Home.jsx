@@ -7,7 +7,9 @@ const Home = () => {
     <div className="back">
       <div>
         <div className="bg">
-          <h1 className="text-center">Here I am doing my portfolio</h1>
+          <h1 className="text-center home-body">
+            Here I am doing my portfolio
+          </h1>
         </div>
         <Navbar />
       </div>
