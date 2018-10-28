@@ -12,11 +12,9 @@ const About = () => {
             <strong>Full Stack Developer</strong>
           </p>
           <p>
-            I am a WordPress & Front-end Developer, working for the last five
-            years. I have experience working with local clients along with
-            clients from all around the world. I have vast knowledge in html,
-            css, Javascript , JQuery, Angular (javascript framewok), wordpress
-            theme development and so on .
+            I am a Full-stack Developer.I have vast knowledge in html, css,
+            Javascript , JQuery, React (javascript library), Python,
+            NodeJs/Express, MongoDB.
           </p>
         </div>
         <div className="col-lg-4">

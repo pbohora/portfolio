@@ -4,18 +4,10 @@ import "../contact.css";
 class Contact extends Component {
   render() {
     return (
-      <div>
-        <div className="container mt-5">
-          <div className="row">
-            <div className="col-lg">
-              <p>contact</p>
-            </div>
-            <div className="col-lg">
-              <p>contact</p>
-            </div>
-            <div className="col-lg">
-              <p>contact</p>
-            </div>
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-lg text-center m-5">
+            <h1>Contact</h1>
           </div>
         </div>
 
@@ -34,7 +26,7 @@ class Contact extends Component {
               <label htmlFor="">Email Address</label>
               <input
                 type="text"
-                className="form-control"
+                className="form-control "
                 placeholder="Enter Email"
               />
             </div>
