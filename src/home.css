@@ -1,13 +1,13 @@
 .home-body {
   padding-top: 40vh;
   padding-bottom: 40vh;
-  color: azure;
+  color: white;
 }
 
 .bg {
   background: url(homess.jpg);
   height: 100vh;
-
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

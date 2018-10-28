@@ -4,16 +4,17 @@ import "../navbar.css";
 class Navbar extends Component {
   state = {
     color: "transparent",
-    textcolor: "azure"
+    textcolor: "azure",
+    boxshadow: 0
   };
 
   listenScrollEvent = e => {
-    window.scrollY > 250
-      ? this.setState({ color: "azure", textcolor: "red" })
+    window.scrollY > 50
+      ? this.setState({ color: "azure", textcolor: "red", boxshadow: 15 })
       : this.setState({
           color: "transparent",
           textcolor: "azure",
-          opacity: 1
+          boxshadow: 0
         });
   };
 
@@ -24,8 +25,12 @@ class Navbar extends Component {
   render() {
     return (
       <nav
-        style={{ background: this.state.color, color: this.state.textcolor }}
-        className="navbar navbar-expand-lg navbar-light fixed-top"
+        style={{
+          background: this.state.color,
+          color: this.state.textcolor,
+          boxShadow: this.state.boxshadow
+        }}
+        className="navbar navbar-expand-lg navbar-light fixed-top "
       >
         <div className="container">
           <a className="navbar-brand font-weight-bold largetext">Pradip</a>
@@ -35,9 +40,7 @@ class Navbar extends Component {
             data-toggle="collapse"
             data-target="#collapsibleNavbar"
           >
-            <span className="navbar-toggler-icon">
-              <i style={{ color: "red" }} className="fa fa-bars fa-1x" />
-            </span>
+            <span className="navbar-toggler-icon" />
           </button>
           <div
             className="collapse navbar-collapse  font-weight-bold text-center navtext"
