@@ -1,7 +1,7 @@
 .aboutbody {
-  margin-top: 8%;
-  height: 7100%;
-  margin-bottom: 2%;
+  padding-top: 5%;
+  height: 550pvh;
+  padding-bottom: 11%;
 }
 
 .fontstyle {
@@ -20,8 +20,11 @@
 .aboutme {
   text-align: right;
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 968px) {
   .aboutme {
     text-align: center;
+  }
+  .aboutbody {
+    height: 100%;
   }
 }

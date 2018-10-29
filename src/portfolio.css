@@ -1,5 +1,16 @@
 .portfolio-body {
-  margin-top: 15vh;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.bgportfolio {
+  background: url(homess.jpg);
+  height: 100%;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .box-height {

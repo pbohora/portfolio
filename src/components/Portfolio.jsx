@@ -5,8 +5,8 @@ import ProjectPic from "../image.jpg";
 class Portfolio extends Component {
   render() {
     return (
-      <div className="bg-light">
-        <div className="container container-fluid portfolio-body">
+      <div className="bgportfolio">
+        <div className="container container-fluid portfolio-body text-white">
           <div className="row">
             <div className="col-lg-12">
               <h1 className="text-center mt-3 mb-3">My Works</h1>

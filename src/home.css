@@ -1,14 +1,22 @@
 .home-body {
   padding-top: 40vh;
   padding-bottom: 40vh;
-  color: white;
+  color: #1a54d1;
 }
-
+.home-texthead {
+  font-size: 6vw;
+  font-weight: 600;
+}
+.home-text {
+  font-size: 4vw;
+  font-weight: 600;
+}
 .bg {
   background: url(homess.jpg);
   height: 100vh;
-  opacity: 0.8;
+  opacity: 0.9;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
