@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
           <div className="col-md">
             <i className="fa fa-phone" />
-            <p>+358442400488</p>
+            <p>(+358) 442400488</p>
           </div>
           <div className="col-md">
             <i className="fa fa-envelope" />

@@ -12,7 +12,8 @@
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4",
     "react-typing-animation": "^1.4.0",
-    "react-typist": "^2.0.4"
+    "react-typist": "^2.0.4",
+    "react-typist-loop": "0.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

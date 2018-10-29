@@ -1,7 +1,7 @@
 .home-body {
   padding-top: 40vh;
   padding-bottom: 40vh;
-  color: #1a54d1;
+  color: white;
 }
 .home-texthead {
   font-size: 6vw;
@@ -10,6 +10,8 @@
 .home-text {
   font-size: 4vw;
   font-weight: 600;
+  display: inline-block;
+  padding: 15px;
 }
 .bg {
   background: url(homess.jpg);
