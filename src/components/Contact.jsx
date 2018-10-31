@@ -8,7 +8,7 @@ class Contact extends Component {
         <div className="container pb-4">
           <div className="row">
             <div className="col-lg text-center m-5">
-              <h1 className="text-white">Contact</h1>
+              <h1 className="text-muted">Contact</h1>
             </div>
           </div>
 

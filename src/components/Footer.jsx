@@ -25,11 +25,11 @@ const Footer = () => {
           className="row footer pt-2 justify-content-center
         pb-3"
         >
-          <i className="fa fa-facebook-square pr-2 pl-1" />
-          <i className="fa fa-instagram pr-2 pl-1" />
-          <i className="fa fa-github pr-2 pl-1" />
+          <i className="fa fa-facebook-square pr-3 pl-1" />
+          <i className="fa fa-instagram pr-3 pl-1" />
+          <i className="fa fa-github pr-3 pl-1" />
           <i className="fa fa-linkedin-square pr-3 pl-1" />
-          <i className="fa fa-pinterest-square pr-2 pl-1" />
+          <i className="fa fa-pinterest-square pr-3 pl-1" />
         </div>
       </div>
     </div>

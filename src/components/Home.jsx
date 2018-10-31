@@ -7,6 +7,11 @@ import "../home.css";
 
 class Home extends Component {
   render() {
+    const intro = [
+      "am a software developer",
+      "love challenges",
+      "am a web developer"
+    ];
     return (
       <div>
         <div className="bg">
@@ -15,11 +20,7 @@ class Home extends Component {
               <h1 className="home-texthead">Hi, I'm Pradip. I..</h1>
               <div className="home-text bg-danger">
                 <TypistLoop interval={1000}>
-                  {[
-                    "am a software developer",
-                    "love challenges",
-                    "am a web developer"
-                  ].map(text => (
+                  {intro.map(text => (
                     <Typist key={text} startDelay={1000}>
                       {text}
                       <Typist.Backspace count={text.length} delay={2000} />

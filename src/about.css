@@ -4,6 +4,16 @@
   padding-bottom: 11%;
 }
 
+.bgabout {
+  background: url(water.jpg);
+  height: 100%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .fontstyle {
   font-family: "Poppins", sans-serif;
   font-size: 75%;

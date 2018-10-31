@@ -4,12 +4,12 @@ import "../navbar.css";
 class Navbar extends Component {
   state = {
     color: "transparent",
-    textcolor: "azure"
+    textcolor: "white"
   };
 
   listenScrollEvent = e => {
     window.scrollY > 50
-      ? this.setState({ color: "azure", textcolor: "red" })
+      ? this.setState({ color: "black" })
       : this.setState({
           color: "transparent",
           textcolor: "white"
@@ -28,9 +28,9 @@ class Navbar extends Component {
           color: this.state.textcolor,
           boxShadow: this.state.boxshadow
         }}
-        className="navbar navbar-expand-lg navbar-light fixed-top "
+        className="navbar navbar-expand-lg navbar-dark fixed-top "
       >
-        <div className="container">
+        <div className="container container-fluid">
           <a className="navbar-brand font-weight-bold largetext">Pradip</a>
           <button
             className="navbar-toggler"
