@@ -38,7 +38,7 @@ class Contact extends Component {
               <textarea type="text" className="form-control " row="15" />
             </div>
 
-            <button className="btn btn-primary">Send Message</button>
+            <button className="btn btn-primary button">Send Message</button>
           </form>
         </div>
       </div>

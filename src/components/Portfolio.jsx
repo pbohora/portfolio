@@ -27,6 +27,12 @@ class Portfolio extends Component {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum."
               </p>
+              <button className="btn button-portfolio mr-5">
+                Go to Website
+              </button>
+              <button className="btn button-portfolio">
+                Github Repository
+              </button>
             </div>
             <div className="col-lg">
               <img className="box-height" src={ProjectPic} alt="" />
@@ -50,6 +56,12 @@ class Portfolio extends Component {
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
                 qui officia deserunt mollit anim id est laborum."
               </p>
+              <button className="btn button-portfolio mr-5">
+                Go to Website
+              </button>
+              <button className="btn button-portfolio">
+                Github Repository
+              </button>
             </div>
           </div>
         </div>
