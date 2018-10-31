@@ -12,8 +12,8 @@ class Portfolio extends Component {
               <h1 className="text-center mt-3 mb-5">My Works</h1>
             </div>
           </div>
-          <div className="row mt-4">
-            <div className="col-lg">
+          <div className="row mt-4 project">
+            <div className="col-lg m-3">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
                 saepe voluptate fugiat odit officiis aliquid autem fuga ipsam
@@ -34,15 +34,15 @@ class Portfolio extends Component {
                 Github Repository
               </button>
             </div>
-            <div className="col-lg">
+            <div className="col-lg m-3">
               <img className="box-height" src={ProjectPic} alt="" />
             </div>
           </div>
-          <div className="row mt-5">
-            <div className="col-lg">
+          <div className="row mt-5 project">
+            <div className="col-lg m-3">
               <img className="box-height" src={ProjectPic} alt="" />
             </div>
-            <div className="col-lg">
+            <div className="col-lg m-3">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
                 ad. Sed voluptatem veritatis harum maxime a dolores architecto?

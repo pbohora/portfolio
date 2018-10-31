@@ -1,4 +1,6 @@
 import React from "react";
+import Download from "@axetroy/react-download";
+import CV from "../CV.pdf";
 import "../about.css";
 import Profile from "../profile.jpg";
 
@@ -17,6 +19,11 @@ const About = () => {
               Javascript , JQuery, React (javascript library), Python,
               NodeJs/Express, MongoDB.
             </p>
+            <a href={CV} target="_blank">
+              <button type="button" className="btn cvbutton">
+                Download CV
+              </button>
+            </a>
           </div>
           <div className="col-lg-4">
             <img src={Profile} alt="" className="profileImg" />
@@ -86,12 +93,13 @@ const About = () => {
               />
             </div>
             <div className="form-inline fontstyle">
-              <p>JAVA</p>
-              <p className="ml-auto">25%</p>
+              <p>Python</p>
+              <p className="ml-auto">40%</p>
             </div>
 
             <div className="progress progressheight mb-3">
               <div
+                style={{ width: 140 }}
                 className="progress-bar bg-dark"
                 role="progressbar"
                 aria-valuenow="100"

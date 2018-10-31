@@ -37,4 +37,16 @@
   .aboutbody {
     height: 100%;
   }
+  .cvbutton {
+    margin-bottom: 25px;
+  }
+}
+
+.cvbutton {
+  border: 2px solid red;
+  border-radius: 25px;
+  color: white;
+  background: red;
+  font-size: 23px;
+  padding: 6px 25px;
 }

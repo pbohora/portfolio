@@ -14,8 +14,8 @@
 }
 
 .box-height {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   box-shadow: 20px 7px 11px 0 rgba(0, 0, 0, 0.2),
     20px 9px 23px 0 rgba(0, 0, 0, 0.19);
 }
@@ -26,10 +26,17 @@
   border: 2px solid rgb(255, 72, 0);
   padding: 6px 25px;
   background-color: azure;
+  margin: 5px;
 }
 
 @media only screen and (max-width: 980px) {
   .button-portfolio {
     margin: 10px;
+  }
+  .project {
+    border: 1px solid red;
+    margin: 15px 15px;
+    box-shadow: 20px 7px 11px 0 rgba(0, 0, 0, 0.2),
+      20px 9px 23px 0 rgba(0, 0, 0, 0.19);
   }
 }
