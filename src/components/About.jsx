@@ -4,7 +4,7 @@ import Profile from "../profile.jpg";
 
 const About = () => {
   return (
-    <div className="bgabout">
+    <div className="bgabout" id="about">
       <div className="container contianer-fluid aboutbody text-white">
         <div className="row">
           <div className="col-lg-4 aboutme mt-2">

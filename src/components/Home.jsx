@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./Navbar";
-import Typing from "react-typing-animation";
+
 import Typist from "react-typist";
 import TypistLoop from "react-typist-loop";
 import "../home.css";
@@ -14,7 +13,7 @@ class Home extends Component {
     ];
     return (
       <div>
-        <div className="bg">
+        <div className="bg" id="home">
           <div className="container">
             <div className="home-body text-center">
               <h1 className="home-texthead">Hi, I'm Pradip. I..</h1>

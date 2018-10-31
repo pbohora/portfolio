@@ -4,7 +4,7 @@ import "../contact.css";
 class Contact extends Component {
   render() {
     return (
-      <div className="background">
+      <div className="background" id="contact">
         <div className="container pb-4">
           <div className="row">
             <div className="col-lg text-center m-5">
