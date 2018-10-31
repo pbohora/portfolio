@@ -35,8 +35,13 @@
   }
   .project {
     border: 1px solid red;
-    margin: 15px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 20px 7px 11px 0 rgba(0, 0, 0, 0.2),
       20px 9px 23px 0 rgba(0, 0, 0, 0.19);
+  }
+  .box-height {
+    width: 100%;
+    height: auto;
   }
 }
