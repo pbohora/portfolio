@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../portfolio.css";
-import ProjectPic from "../image.jpg";
+import ShoppingCart from "../shoppingcart.PNG";
+import AnimeSeries from "../animeseries.PNG";
 
 class Portfolio extends Component {
   render() {
@@ -12,56 +13,54 @@ class Portfolio extends Component {
               <h1 className="text-center mt-3 mb-5">My Works</h1>
             </div>
           </div>
-          <div className="row mt-4 project">
-            <div className="col-lg m-3">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
-                saepe voluptate fugiat odit officiis aliquid autem fuga ipsam
-                voluptatibus ab molestias culpa atque obcaecati perferendis hic
-                provident consequuntur eius corrupti! "Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-              </p>
-              <button className="btn button-portfolio mr-5">
-                Go to Website
-              </button>
-              <button className="btn button-portfolio">
-                Github Repository
-              </button>
+          <div className="project-font">
+            <div className="row mt-4 project">
+              <div className="col-lg m-3">
+                <p className="">
+                  A simple model of a shopping cart designed with React and for
+                  styling Bootstrap is used. In the app you increase the number
+                  of item and also delete the entire item.
+                </p>
+                <button className="btn button-portfolio mr-4">
+                  Go to Web page
+                </button>
+                <a
+                  href="https://github.com/pbohora/shopping-list-counter"
+                  target="_blank"
+                >
+                  <button className="btn button-portfolio">
+                    Github Repository
+                  </button>
+                </a>
+              </div>
+              <div className="col-lg m-3">
+                <img className="box-height" src={ShoppingCart} alt="" />
+              </div>
             </div>
-            <div className="col-lg m-3">
-              <img className="box-height" src={ProjectPic} alt="" />
-            </div>
-          </div>
-          <div className="row mt-5 project">
-            <div className="col-lg m-3">
-              <img className="box-height" src={ProjectPic} alt="" />
-            </div>
-            <div className="col-lg m-3">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                ad. Sed voluptatem veritatis harum maxime a dolores architecto?
-                Veritatis dolorem aspernatur autem officia deserunt neque! Atque
-                tempore dolorum quidem magni. "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum."
-              </p>
-              <button className="btn button-portfolio mr-5">
-                Go to Website
-              </button>
-              <button className="btn button-portfolio">
-                Github Repository
-              </button>
+
+            <div className="row mt-5 project">
+              <div className="col-lg m-3">
+                <img className="box-height" src={AnimeSeries} alt="" />
+              </div>
+              <div className="col-lg m-3">
+                <p>
+                  A small search engine to find the favorite tv-series or
+                  animes. Programming language/ Technologies used,
+                  Javascript(React). TVmaze API is used to get the list of the
+                  series and anime.
+                </p>
+                <button className="btn button-portfolio mr-4">
+                  Go to Web page
+                </button>
+                <a
+                  href="https://github.com/pbohora/tvSeriesApp"
+                  target="_blank"
+                >
+                  <button className="btn button-portfolio">
+                    Github Repository
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
