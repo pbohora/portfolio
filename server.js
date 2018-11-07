@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 //const favicon = require("serve-favicon");
-//const path = require("path");
+const path = require("path");
 const app = express();
 const port = 5005;
 app.use(bodyParser.json());
@@ -18,5 +18,12 @@ app.post("/api/world", (req, res) => {
     }`
   );
 });
+if (process.env.NODDE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "client/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  });
+}
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
