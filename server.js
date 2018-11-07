@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 5005;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-//app.use(favicon(path.join(__dirname, "client", "public", "build/favicon.ico")));
+app.use(favicon(path.join(__dirname, "client", "public", "favicon.ico")));
 app.get("/api/hello", (req, res) => {
   res.send({ express: "Hello From Express" });
 });
