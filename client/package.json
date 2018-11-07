@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "npm": "5.6.0",
+    "node": "9.10.1"
+  },
+  "dependencies": {
+    "@axetroy/react-download": "^1.1.1",
+    "font-awesome": "^4.7.0",
+    "js-file-download": "^0.4.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-download-link": "^2.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "react-typing-animation": "^1.4.0",
+    "react-typist": "^2.0.4",
+    "react-typist-loop": "0.0.5"
+  },
+  "scripts": {
+    "start": "set PORT=3005 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5005",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

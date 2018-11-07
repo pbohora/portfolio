@@ -21,16 +21,14 @@
 }
 .button-portfolio {
   border-radius: 25px;
-  font-size: 1.7vw;
+  font-size: 1.4vw;
   color: rgb(255, 72, 0);
   border: 2px solid rgb(255, 72, 0);
   padding: 6px 25px;
   background-color: azure;
   margin: 5px;
 }
-.project {
-  text-align: center;
-}
+
 .project-font {
   font-size: 2vw;
 }
@@ -42,12 +40,13 @@
     font-size: 4vw;
   }
   .project {
-    border: 1px solid red;
+    border: 1px solid;
     margin-left: 10px;
     margin-right: 10px;
     height: auto;
     box-shadow: 20px 7px 11px 0 rgba(0, 0, 0, 0.2),
       20px 9px 23px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(247, 11, 11);
   }
   .box-height {
     width: 100%;

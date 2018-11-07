@@ -2,6 +2,27 @@ import React, { Component } from "react";
 import "../contact.css";
 
 class Contact extends Component {
+  state = {
+    name: null,
+    email: null,
+    message: null
+  };
+  handleChange = e => {
+    this.setState({
+      [e.target.id]: e.target.value
+    });
+  };
+  handleSubmit = e => {
+    e.preventDefault();
+
+    fetch("/api/world", {
+      method: "POST",
+      body: JSON.stringify({ message: this.state.message }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then(alert("message sent"));
+  };
   render() {
     return (
       <div className="background" id="contact">
@@ -12,12 +33,17 @@ class Contact extends Component {
             </div>
           </div>
 
-          <form action="" className="form-styles mb-4 bg-white">
+          <form
+            onSubmit={this.handleSubmit}
+            className="form-styles mb-4 bg-white"
+          >
             <div className="form-row">
               <div className="form-group col-lg-6">
                 <label htmlFor="">Full Name</label>
                 <input
                   type="text"
+                  id="name"
+                  onChange={this.handleChange}
                   className="form-control"
                   placeholder="Enter your Full Name"
                 />
@@ -27,6 +53,8 @@ class Contact extends Component {
                 <label htmlFor="">Email Address</label>
                 <input
                   type="text"
+                  id="email"
+                  onChange={this.handleChange}
                   className="form-control "
                   placeholder="Enter Email"
                 />
@@ -35,7 +63,13 @@ class Contact extends Component {
 
             <div className="form-group">
               <label htmlFor="">Message</label>
-              <textarea type="text" className="form-control " row="15" />
+              <textarea
+                type="text"
+                id="message"
+                onChange={this.handleChange}
+                className="form-control "
+                row="15"
+              />
             </div>
 
             <button className="btn btn-primary button">Send Message</button>
