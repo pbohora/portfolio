@@ -3,15 +3,17 @@ import "../contact.css";
 
 class Contact extends Component {
   state = {
-    name: null,
-    email: null,
-    message: null
+    name: "",
+    email: "",
+    message: ""
   };
+
   handleChange = e => {
     this.setState({
       [e.target.id]: e.target.value
     });
   };
+
   handleSubmit = e => {
     e.preventDefault();
 
@@ -21,7 +23,9 @@ class Contact extends Component {
       headers: {
         "Content-Type": "application/json"
       }
-    }).then(alert("message sent"));
+    });
+    this.setState({ name: "", email: "", message: "" });
+    console.log(this.state);
   };
   render() {
     return (
@@ -44,6 +48,7 @@ class Contact extends Component {
                   type="text"
                   id="name"
                   onChange={this.handleChange}
+                  value={this.state.name}
                   className="form-control"
                   placeholder="Enter your Full Name"
                 />
@@ -55,6 +60,7 @@ class Contact extends Component {
                   type="text"
                   id="email"
                   onChange={this.handleChange}
+                  value={this.state.email}
                   className="form-control "
                   placeholder="Enter Email"
                 />
@@ -67,6 +73,7 @@ class Contact extends Component {
                 type="text"
                 id="message"
                 onChange={this.handleChange}
+                value={this.state.message}
                 className="form-control "
                 row="15"
               />
