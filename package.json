@@ -12,6 +12,10 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "nodemon": "^1.18.6",
+    "prop-types": "^15.6.2",
+    "react-alert": "^4.0.4",
+    "react-alert-template-basic": "^1.0.0",
+    "react-transition-group": "^2.5.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {

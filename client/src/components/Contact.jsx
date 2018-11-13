@@ -1,11 +1,15 @@
 import React, { Component } from "react";
+import { withAlert } from "react-alert";
 import "../contact.css";
 
 class Contact extends Component {
   state = {
     name: "",
+    nameError: "",
     email: "",
-    message: ""
+    emailError: "",
+    message: "",
+    messageError: ""
   };
 
   handleChange = e => {
@@ -14,18 +18,59 @@ class Contact extends Component {
     });
   };
 
+  validate = () => {
+    let isError = false;
+    const errors = {
+      nameError: "",
+      emailError: "",
+      messageError: ""
+    };
+
+    if (this.state.name.length < 5) {
+      isError = true;
+      errors.nameError = "Username needs to be atleast 5 characters long!";
+    }
+
+    if (this.state.email.indexOf("@") === -1) {
+      isError = true;
+      errors.emailError = "Requires valid email!";
+    }
+
+    if (this.state.message.length < 5) {
+      isError = true;
+      errors.messageError = "Please write a valid message!";
+    }
+
+    this.setState({
+      ...this.state,
+      ...errors
+    });
+
+    return isError;
+  };
+
   handleSubmit = e => {
     e.preventDefault();
+    const err = this.validate();
 
-    fetch("/api/world", {
-      method: "POST",
-      body: JSON.stringify({ message: this.state.message }),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    });
-    this.setState({ name: "", email: "", message: "" });
-    console.log(this.state);
+    if (!err) {
+      fetch("/api/world", {
+        method: "POST",
+        body: JSON.stringify({ message: this.state.message }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+        .then(
+          this.props.alert.show(
+            <div className="text-center">
+              <h3>Thank you for your message !</h3>
+              <h5>I will get back to you soon</h5>
+            </div>
+          )
+        )
+        .then(this.setState({ name: "", email: "", message: "" }));
+    }
   };
   render() {
     return (
@@ -52,6 +97,7 @@ class Contact extends Component {
                   className="form-control"
                   placeholder="Enter your Full Name"
                 />
+                <p className="text-danger">{this.state.nameError}</p>
               </div>
 
               <div className="form-group col-lg-6">
@@ -64,6 +110,7 @@ class Contact extends Component {
                   className="form-control "
                   placeholder="Enter Email"
                 />
+                <p className="text-danger">{this.state.emailError}</p>
               </div>
             </div>
 
@@ -77,6 +124,7 @@ class Contact extends Component {
                 className="form-control "
                 row="15"
               />
+              <p className="text-danger">{this.state.messageError}</p>
             </div>
 
             <button className="btn btn-primary button">Send Message</button>
@@ -87,4 +135,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default withAlert(Contact);

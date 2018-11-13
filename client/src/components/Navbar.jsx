@@ -31,7 +31,9 @@ class Navbar extends Component {
         className="navbar navbar-expand-lg navbar-dark fixed-top "
       >
         <div className="container container-fluid">
-          <a className="navbar-brand font-weight-bold largetext">Pradip</a>
+          <a href="#home" className="navbar-brand font-weight-bold largetext">
+            Pradip
+          </a>
           <button
             className="navbar-toggler"
             type="button"

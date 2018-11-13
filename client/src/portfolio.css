@@ -1,24 +1,3 @@
-.portfolio-body {
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.bgportfolio {
-  background: url(homess.jpg);
-  height: 100%;
-  opacity: 0.9;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.box-height {
-  height: 100%;
-  width: 100%;
-  box-shadow: 20px 7px 11px 0 rgba(0, 0, 0, 0.2),
-    20px 9px 23px 0 rgba(0, 0, 0, 0.19);
-}
 .button-portfolio {
   border-radius: 25px;
   font-size: 1.4vw;
@@ -35,24 +14,15 @@
 
 @media only screen and (max-width: 980px) {
   .button-portfolio {
-    margin: 10px;
     width: 100%;
     font-size: 4vw;
   }
-  .project {
-    border: 1px solid;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: auto;
-    box-shadow: 20px 7px 11px 0 rgba(0, 0, 0, 0.2),
-      20px 9px 23px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgb(247, 11, 11);
-  }
-  .box-height {
-    width: 100%;
-    height: auto;
-  }
+
   .project-font {
     font-size: 4vw;
   }
+}
+.box-height {
+  height: 38vw;
+  width: 100%;
 }

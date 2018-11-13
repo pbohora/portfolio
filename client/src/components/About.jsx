@@ -1,5 +1,4 @@
 import React from "react";
-import Download from "@axetroy/react-download";
 import CV from "../CV.pdf";
 import "../about.css";
 import Profile from "../profile.jpg";
@@ -7,7 +6,7 @@ import Profile from "../profile.jpg";
 const About = () => {
   return (
     <div className="bgabout" id="about">
-      <div className="container contianer-fluid aboutbody text-white">
+      <div className="container aboutbody text-white">
         <div className="row">
           <div className="col-lg-4 aboutme mt-2">
             <h2 className="text-weight-bold">Pradip Bohora</h2>
@@ -19,7 +18,7 @@ const About = () => {
               Javascript , JQuery, React (javascript library), Python,
               NodeJs/Express, MongoDB.
             </p>
-            <a href={CV} target="_blank">
+            <a href={CV} target="_blank" rel="noopener noreferrer">
               <button type="button" className="btn cvbutton">
                 Download CV
               </button>

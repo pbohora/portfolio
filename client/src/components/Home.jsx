@@ -14,7 +14,7 @@ class Home extends Component {
     return (
       <div>
         <div className="bg" id="home">
-          <div className="container">
+          <div className="container-fluid">
             <div className="home-body text-center">
               <h1 className="home-texthead">Hi, I'm Pradip. I..</h1>
               <div className="home-text bg-danger">
