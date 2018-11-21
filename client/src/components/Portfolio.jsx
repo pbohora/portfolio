@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../portfolio.css";
-import ShoppingCart from "../shoppingcart.PNG";
+import Gifty from "../myGifty.PNG";
 import AnimeSeries from "../animeseries.PNG";
 
 class Portfolio extends Component {
@@ -23,7 +23,7 @@ class Portfolio extends Component {
                 </p>
                 <button className="btn button-portfolio">Go to Web page</button>
                 <a
-                  href="https://github.com/pbohora/shopping-list-counter"
+                  href="https://github.com/pbohora/myGifty"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -33,7 +33,7 @@ class Portfolio extends Component {
                 </a>
               </div>
               <div className="col-lg-6">
-                <img className="box-height" src={ShoppingCart} alt="" />
+                <img className="box-height" src={gifty} alt="" />
               </div>
             </div>
 

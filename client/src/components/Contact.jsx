@@ -26,9 +26,9 @@ class Contact extends Component {
       messageError: ""
     };
 
-    if (this.state.name.length < 5) {
+    if (this.state.name.length < 3) {
       isError = true;
-      errors.nameError = "Username needs to be atleast 5 characters long!";
+      errors.nameError = "Username needs to be atleast 3 characters long!";
     }
 
     if (this.state.email.indexOf("@") === -1) {
@@ -64,8 +64,8 @@ class Contact extends Component {
         .then(
           this.props.alert.show(
             <div className="text-center">
-              <h3>Thank you for your message !</h3>
-              <h5>I will get back to you soon</h5>
+              <h6>Thank you for your message !</h6>
+              <p>I will get back to you soon</p>
             </div>
           )
         )
