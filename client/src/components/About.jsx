@@ -14,9 +14,9 @@ const About = () => {
               <strong>Full Stack Developer</strong>
             </p>
             <p>
-              I am a Full-stack Developer.I have vast knowledge in html, css,
-              Javascript , JQuery, React (javascript library), Python,
-              NodeJs/Express, MongoDB.
+              I am a Full-stack Developer.I have good knowledge in html, css,
+              Javascript , JQuery, React (javascript library), GraphQl,
+              NodeJs/Express, MongoDB and Python(basic).
             </p>
             <a href={CV} target="_blank" rel="noopener noreferrer">
               <button type="button" className="btn cvbutton">
@@ -32,12 +32,12 @@ const About = () => {
 
             <div className="form-inline fontstyle">
               <p>HTML/CSS</p>
-              <p className="ml-auto">85%</p>
+              <p className="ml-auto">80%</p>
             </div>
 
             <div className="progress progressheight mb-3">
               <div
-                style={{ width: 300 }}
+                style={{ width: 280 }}
                 className="progress-bar bg-dark"
                 role="progressbar"
                 aria-valuenow="0"
@@ -62,7 +62,7 @@ const About = () => {
               />
             </div>
             <div className="form-inline fontstyle">
-              <p>REACT/REDUX</p>
+              <p>REACT</p>
               <p className="ml-auto">50%</p>
             </div>
 
@@ -77,7 +77,7 @@ const About = () => {
               />
             </div>
             <div className="form-inline fontstyle">
-              <p>NODEJS</p>
+              <p>NODEJS/ Express/ MongoDb</p>
               <p className="ml-auto">60%</p>
             </div>
 
@@ -92,7 +92,7 @@ const About = () => {
               />
             </div>
             <div className="form-inline fontstyle">
-              <p>Python</p>
+              <p>GraphQl</p>
               <p className="ml-auto">40%</p>
             </div>
 

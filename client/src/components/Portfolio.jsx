@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../portfolio.css";
-import Gifty from "../myGifty.PNG";
+import Gifty from "../mygifty.PNG";
 import AnimeSeries from "../animeseries.PNG";
 
 class Portfolio extends Component {
@@ -14,16 +14,19 @@ class Portfolio extends Component {
             </div>
           </div>
           <div className="project-font">
-            <div className="row">
+            <div className="row border-end">
               <div className=" col-lg-6 text-center">
+                <h3 className="border-bottom">MyGifty</h3>
                 <p>
-                  A simple model of a shopping cart designed with React and for
-                  styling Bootstrap is used. In the app you increase the number
-                  of item and also delete the entire item.
+                  A simulated copy of the online gift shop where you can choose
+                  the product according to the occasion(eg-christmas,
+                  birthday..) of according to who you want to send the gift
+                  (eg-parents, friends,..). React, Node/Express, MongoDb,
+                  GraphQl are used to design this app.
                 </p>
                 <button className="btn button-portfolio">Go to Web page</button>
                 <a
-                  href="https://github.com/pbohora/myGifty"
+                  href="https://github.com/pbohora/Gifty"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -33,7 +36,7 @@ class Portfolio extends Component {
                 </a>
               </div>
               <div className="col-lg-6">
-                <img className="box-height" src={gifty} alt="" />
+                <img className="box-height" src={Gifty} alt="" />
               </div>
             </div>
 
@@ -42,6 +45,7 @@ class Portfolio extends Component {
                 <img className="box-height " src={AnimeSeries} alt="" />
               </div>
               <div className="col-lg-6 text-center">
+                <h3 className="second-app border-bottom">Anime Series app</h3>
                 <p>
                   A small search engine to find the favorite tv-series or
                   animes. Programming language/ Technologies used,
@@ -58,6 +62,19 @@ class Portfolio extends Component {
                 >
                   <button className="btn button-portfolio">
                     Github Repository
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col text-center">
+                <a
+                  href=" https://github.com/pbohora"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-danger button-end">
+                    See more projects in Github
                   </button>
                 </a>
               </div>
