@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "event-stream": "^3.3.4",
     "express": "^4.16.4",
     "nodemon": "^1.18.6",
     "prop-types": "^15.6.2",
