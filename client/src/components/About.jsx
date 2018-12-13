@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../My CV .pdf";
+import CV from "../PRADIP CV.pdf";
 import "../about.css";
 import Profile from "../profile.jpg";
 
