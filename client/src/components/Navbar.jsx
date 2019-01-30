@@ -4,15 +4,24 @@ import "../navbar.css";
 class Navbar extends Component {
   state = {
     color: "transparent",
-    textcolor: "white"
+    borderbottom: "",
+    opacity: "",
+    boxShadow: ""
   };
 
   listenScrollEvent = e => {
     window.scrollY > 50
-      ? this.setState({ color: "black" })
+      ? this.setState({
+          color: "white",
+          borderbottom: "1px solid black",
+          opacity: "0.9",
+          textcolor: "red",
+          boxShadow: "0px 9px 5px 0px rgba(0,0,0,0.75)"
+        })
       : this.setState({
           color: "transparent",
-          textcolor: "white"
+          boxShadow: "",
+          borderbottom: ""
         });
   };
 
@@ -28,10 +37,10 @@ class Navbar extends Component {
           color: this.state.textcolor,
           boxShadow: this.state.boxshadow
         }}
-        className="navbar navbar-expand-lg navbar-dark fixed-top "
+        className="navbar navbar-expand-lg navbar-light fixed-top "
       >
         <div className="container container-fluid">
-          <a href="#home" className="navbar-brand font-weight-bold largetext">
+          <a href="#home" className="navbar- font-weight-bold largetext">
             Pradip
           </a>
           <button

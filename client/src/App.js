@@ -9,6 +9,8 @@ import Navbar from "./components/Navbar";
 import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import { BrowserRouter } from "react-router-dom";
+
+import "./app.css";
 const options = {
   timeout: 5000,
   position: "top center",

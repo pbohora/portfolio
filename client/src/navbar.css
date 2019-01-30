@@ -1,10 +1,9 @@
 .largetext {
   font-size: 35px;
-  font-style: italic;
+  color: rgb(255, 71, 26);
 }
 .navtext {
   font-size: 17px;
-  font-style: oblique;
 }
 
 @media only screen and (max-width: 980px) {

@@ -6,7 +6,7 @@ import Profile from "../profile.jpg";
 const About = () => {
   return (
     <div className="bgabout" id="about">
-      <div className="container aboutbody text-white">
+      <div className="container aboutbody ">
         <div className="row">
           <div className="col-lg-4 aboutme mt-2">
             <h2 className="text-weight-bold">Pradip Bohora</h2>
@@ -15,8 +15,8 @@ const About = () => {
             </p>
             <p>
               I am a Full-stack Developer.I have good knowledge in html, css,
-              Javascript , JQuery, React (javascript library), GraphQl,
-              NodeJs/Express, MongoDB and Python(basic).
+              Javascript , JQuery, React (javascript library), NodeJs/Express,
+              MongoDB and Python(basic).
             </p>
             <a href={CV} target="_blank" rel="noopener noreferrer">
               <button type="button" className="btn cvbutton">
@@ -87,21 +87,6 @@ const About = () => {
                 className="progress-bar bg-dark"
                 role="progressbar"
                 aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              />
-            </div>
-            <div className="form-inline fontstyle">
-              <p>GraphQl</p>
-              <p className="ml-auto">40%</p>
-            </div>
-
-            <div className="progress progressheight mb-3">
-              <div
-                style={{ width: 140 }}
-                className="progress-bar bg-dark"
-                role="progressbar"
-                aria-valuenow="100"
                 aria-valuemin="0"
                 aria-valuemax="100"
               />
