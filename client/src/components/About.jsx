@@ -1,7 +1,7 @@
 import React from "react";
-import CV from "../My CV.pdf";
+import CV from "../assets/PradipCV.pdf";
 import "../about.css";
-import Profile from "../profile.jpg";
+import Profile from "../assets/photo.jpg";
 
 const About = () => {
   return (
@@ -15,8 +15,8 @@ const About = () => {
             </p>
             <p>
               I am a Full-stack Developer.I have good knowledge in html, css,
-              Javascript , JQuery, React (javascript library), NodeJs/Express,
-              MongoDB and Python(basic).
+              Javascript , JQuery, React, NodeJs/Express, MongoDB and
+              Python(basic).
             </p>
             <a href={CV} target="_blank" rel="noopener noreferrer">
               <button type="button" className="btn cvbutton">

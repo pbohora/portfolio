@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../portfolio.css";
-import Gifty from "../mygifty.PNG";
-import AnimeSeries from "../animeseries.PNG";
+import Gifty from "../assets/mygifty.PNG";
+import AnimeSeries from "../assets/animeseries.PNG";
 
 class Portfolio extends Component {
   render() {
