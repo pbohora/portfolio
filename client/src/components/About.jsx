@@ -1,7 +1,6 @@
-import React from "react";
-import CV from "../My CV.pdf";
-import "../about.css";
-import Profile from "../profile.jpg";
+import React from 'react';
+import '../about.css';
+import Profile from '../profile.jpg';
 
 const About = () => {
   return (
@@ -14,15 +13,13 @@ const About = () => {
               <strong>Full Stack Developer</strong>
             </p>
             <p>
-              I am a Full-stack Developer.I have good knowledge in html, css,
-              Javascript , JQuery, React (javascript library), NodeJs/Express,
-              MongoDB and Python(basic).
+              I am a Full-stack Developer.Motivated, problem solving, flexible
+              and eager to learn new tools and technology. Seeking a position as
+              a Developer where my extensive experience will be further
+              developed and utilized.I have good knowledge in html, css,
+              Javascript , Typescript, React (javascript library),
+              NodeJs/Express, MongoDB,Jest for testing and JAM stack.
             </p>
-            <a href={CV} target="_blank" rel="noopener noreferrer">
-              <button type="button" className="btn cvbutton">
-                Download CV
-              </button>
-            </a>
           </div>
           <div className="col-lg-4">
             <img src={Profile} alt="" className="profileImg" />
@@ -32,7 +29,6 @@ const About = () => {
 
             <div className="form-inline fontstyle">
               <p>HTML/CSS</p>
-              <p className="ml-auto">80%</p>
             </div>
 
             <div className="progress progressheight mb-3">
@@ -48,7 +44,6 @@ const About = () => {
 
             <div className="form-inline fontstyle">
               <p>JAVASCRIPT</p>
-              <p className="ml-auto">75%</p>
             </div>
 
             <div className="progress progressheight mb-3">
@@ -62,13 +57,26 @@ const About = () => {
               />
             </div>
             <div className="form-inline fontstyle">
-              <p>REACT</p>
-              <p className="ml-auto">50%</p>
+              <p>Typescript</p>
             </div>
 
             <div className="progress progressheight mb-3">
               <div
-                style={{ width: 175 }}
+                style={{ width: 200 }}
+                className="progress-bar bg-dark"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              />
+            </div>
+            <div className="form-inline fontstyle">
+              <p>REACT</p>
+            </div>
+
+            <div className="progress progressheight mb-3">
+              <div
+                style={{ width: 250 }}
                 className="progress-bar bg-dark"
                 role="progressbar"
                 aria-valuenow="50"
@@ -78,7 +86,6 @@ const About = () => {
             </div>
             <div className="form-inline fontstyle">
               <p>NODEJS/ Express/ MongoDb</p>
-              <p className="ml-auto">60%</p>
             </div>
 
             <div className="progress progressheight mb-3">

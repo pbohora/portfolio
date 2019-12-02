@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "../portfolio.css";
-import Gifty from "../mygifty.PNG";
-import AnimeSeries from "../animeseries.PNG";
+import React, { Component } from 'react';
+import '../portfolio.css';
+import blogpost from '../assets/blog.jpg';
+import phonebook from '../assets/phonebook.jpg';
 
 class Portfolio extends Component {
   render() {
@@ -10,23 +10,22 @@ class Portfolio extends Component {
         <div className="container-fluid text-dark">
           <div className="row">
             <div className="col-lg-12">
-              <h1 className="text-center mt-3 mb-5">My Works</h1>
+              <h1 className="text-center mt-3 mb-3">My Works</h1>
             </div>
           </div>
           <div className="project-font">
             <div className="row border-end">
               <div className=" col-lg-6 text-center">
-                <h3 className="border-bottom">MyGifty</h3>
+                <h3 className="border-bottom">Blogpost</h3>
                 <p>
-                  A simulated copy of the online gift shop where you can choose
-                  the product according to the occasion(eg-christmas,
-                  birthday..) of according to who you want to send the gift
-                  (eg-parents, friends,..). React, Node/Express, MongoDb,
-                  GraphQl are used to design this app.
+                  A full-stack application to post blogs. Users and login, add
+                  and/or delete blogs. React and css is used to develop frontend
+                  and node/express and mongodb is used for backend. Jest and
+                  testing library is used for testing application.
                 </p>
                 <button className="btn button-portfolio">Go to Web page</button>
                 <a
-                  href="https://github.com/pbohora/Gifty"
+                  href="https://github.com/pbohora/Full-Stack-open-2019/tree/master/part4/bloglist"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -36,27 +35,26 @@ class Portfolio extends Component {
                 </a>
               </div>
               <div className="col-lg-6">
-                <img className="box-height" src={Gifty} alt="" />
+                <img className="box-height" src={blogpost} alt="" />
               </div>
             </div>
 
             <div className="row">
               <div className="col-lg-6">
-                <img className="box-height " src={AnimeSeries} alt="" />
+                <img className="box-height " src={phonebook} alt="" />
               </div>
               <div className="col-lg-6 text-center">
-                <h3 className="second-app border-bottom">Anime Series app</h3>
+                <h3 className="second-app border-bottom">PhoneBook</h3>
                 <p>
-                  A small search engine to find the favorite tv-series or
-                  animes. Programming language/ Technologies used,
-                  Javascript(React). TVmaze API is used to get the list of the
-                  series and anime.
+                  A simple PhoneBook built with React, Node/express and MongoDb.
+                  User can add and delete name and phonenumber, also checks for
+                  the validation.
                 </p>
                 <button className="btn button-portfolio mr">
                   Go to Web page
                 </button>
                 <a
-                  href="https://github.com/pbohora/tvSeriesApp"
+                  href="https://github.com/pbohora/Full-Stack-open-2019/tree/master/part%202/phonebook"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

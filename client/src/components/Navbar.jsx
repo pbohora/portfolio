@@ -1,43 +1,29 @@
-import React, { Component } from "react";
-import "../navbar.css";
+import React, { Component } from 'react';
+import '../navbar.css';
 
 class Navbar extends Component {
   state = {
-    color: "transparent",
-    borderbottom: "",
-    opacity: "",
-    boxShadow: ""
+    style: ''
   };
 
   listenScrollEvent = e => {
     window.scrollY > 50
       ? this.setState({
-          color: "white",
-          borderbottom: "1px solid black",
-          opacity: "0.9",
-          textcolor: "red",
-          boxShadow: "0px 9px 5px 0px rgba(0,0,0,0.75)"
+          style: 'navbar-scroll'
         })
       : this.setState({
-          color: "transparent",
-          boxShadow: "",
-          borderbottom: ""
+          style: ''
         });
   };
 
   componentDidMount() {
-    window.addEventListener("scroll", this.listenScrollEvent);
+    window.addEventListener('scroll', this.listenScrollEvent);
   }
 
   render() {
     return (
       <nav
-        style={{
-          background: this.state.color,
-          color: this.state.textcolor,
-          boxShadow: this.state.boxshadow
-        }}
-        className="navbar navbar-expand-lg navbar-light fixed-top "
+        className={`navbar navbar-expand-lg navbar-light fixed-top ${this.state.style}`}
       >
         <div className="container container-fluid">
           <a href="#home" className="navbar- font-weight-bold largetext">
