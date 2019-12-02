@@ -5,6 +5,6 @@
 /client/node_modules
 # testing
 /coverage
-
+.env
 # production
 
