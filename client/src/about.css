@@ -1,22 +1,15 @@
 .aboutbody {
-  padding-top: 17vh;
-
-  padding-bottom: 11%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .bgabout {
   background-color: rgb(255, 255, 230);
-  height: 100%;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .fontstyle {
   font-family: "Poppins", sans-serif;
-  font-size: 75%;
+  font-size: 10px;
 }
 
 .profileImg {
@@ -27,26 +20,13 @@
 .progressheight {
   height: 3%;
 }
+
 .aboutme {
   text-align: right;
 }
+
 @media only screen and (max-width: 968px) {
   .aboutme {
     text-align: center;
   }
-  .aboutbody {
-    height: 100%;
-  }
-  .cvbutton {
-    margin-bottom: 25px;
-  }
-}
-
-.cvbutton {
-  border: 2px solid red;
-  border-radius: 25px;
-  color: white;
-  background: red;
-  font-size: 23px;
-  padding: 6px 25px;
 }
