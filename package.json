@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "core-js-compat": "^3.6.4",
     "event-stream": "^3.3.4",
     "express": "^4.16.4",
     "nodemon": "^1.18.6",
